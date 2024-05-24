@@ -1,0 +1,352 @@
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #2e2e2e;
+  box-sizing: border-box;
+}
+
+header{
+  padding: 40px 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h4{
+  font-size: 18px;
+}
+.link{
+  text-decoration: none;
+  color: #4e4e4e;
+  margin-left: 24px;
+}
+main{
+  padding: 40px 120px;
+  min-height: calc(100vh - 289px);
+  background-color: rgba(106, 137, 204, 0.4);
+}
+.card{
+  padding: 32px;
+  background-color: #fff;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+.card-body{
+  position: relative;
+  display: flex;
+  align-items: top;
+  gap: 40px;
+}
+h2{
+  font-size: 24px;
+  font-weight: 800;
+  color: #4a69bd;
+  margin-bottom: 24px;
+}
+h3{
+  color: #fff !important;
+}
+h4{
+  color: #4e4e4e;
+}
+footer{
+  padding: 40px 120px;
+  background: #363636;
+}
+.num{
+  font-size: 24px;
+  font-weight: 600;
+  margin: 32px 0 12px 0; 
+}
+button{
+  border: none;
+  outline-color: transparent;
+}
+.btn{
+  padding: 8px 32px;
+  border-radius: 4px;
+  background: #34495e;
+  color: #fff;
+  margin-top: 8px;
+  display: block;
+}
+.reset{
+  padding: 8px 32px;
+  border-radius: 4px;
+  background: hsl(224, 47%, 62%);
+  color: #fff;
+  margin-top: 8px;
+}
+.move{
+  padding: 8px 32px;
+  border-radius: 4px;
+  background: hsl(224, 47%, 62%);
+  color: #fff;
+  margin-top: 8px;
+  width: 210px;
+}
+label{
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+.inline{
+  display: inline;
+  margin-right: 24px;
+}
+input{
+  padding: 8px 16px;
+  border: none;
+  width: min(400px, 100%);
+  outline-color: transparent;
+  border-radius: 4px;
+  border: 2px solid rgba(52, 73, 94, 0.3);
+  font-size: 18px
+}
+input:focus, textarea:focus, select:focus{
+  border: 2px solid hsl(210, 29%, 39%);
+}
+input[type='checkbox'], input[type='radio']{
+  display: inline;
+  margin: 0;
+  margin-bottom: 24px;
+  margin-top: 12px;
+  width: 20px;
+  margin-right: 12px;
+}
+input[type='color']{
+  height: 40px;
+}
+textarea{
+  padding: 12px;
+  width: min(400px, 100%);
+  border-radius: 6px;
+  border: 2px solid rgba(52, 73, 94, 0.3);
+  display: block;
+  margin-bottom: 24px;
+  font-size: 18px
+}
+select{
+  padding: 8px 16px;
+  border: none;
+  width: min(400px, 100%);
+  outline-color: transparent;
+  border-radius: 4px;
+  border: 2px solid rgba(52, 73, 94, 0.3);
+  font-size: 18px;
+  margin-top: 0;
+}
+input:focus, textarea:focus, select:focus{
+  border: 2px solid hsl(210, 29%, 39%);
+}
+.question{
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+}
+.score{
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.incorrect{
+  color: #e74c3c;
+}
+.success{
+  color: #27ae60;
+}
+.warning{
+  color: #ff7f50;
+}
+.task-cont{
+  margin-top: 24px;
+}
+.task{
+  font-size: 18px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  align-items: center;
+  border-bottom: 1px solid rgba(52, 73, 94, 0.4);
+  padding-bottom: 8px;
+}
+.task-num{
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.delete{
+  border: none;
+  outline-color: transparent;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background: #e74c3c;
+  color: #fff;
+  margin-top: 8px;
+}
+.color{
+  background: hsl(224, 47%, 52%);
+}
+.color h2{
+  color: hsl(224, 47%, 82%);
+}
+.card-left{
+  display: flex;
+  gap: 40px;
+}
+.board{
+  background: hsl(224, 47%, 62%);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 200px;
+  height: 200px;
+  border-radius: 6px;
+  padding: 12px;
+  gap: 8px;
+}
+.square{
+  background: hsl(224, 47%, 82%);
+  border-radius: 4px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(224, 47%, 22%);
+}
+.status{
+  color: hsl(224, 47%, 82%);
+  font-size: 24px;
+}
+.calc-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  padding: 18px;
+  border-radius: 6px;
+  width: 300px;
+  /* height: 450px; */
+} 
+.calc-btn{
+  background: hsl(224, 47%, 62%);
+  background-color: hsl(224, 47%, 82%);
+  border-radius: 4px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  
+}
+.span-two{
+  grid-column: span 2;
+}
+.output{
+  grid-column: span 4; 
+  background: hsl(224, 47%, 22%);
+  border-radius: 4px;
+  margin-bottom: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  height: 76px;
+  align-items: flex-end;
+  justify-content: space-between;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.prev-operand{
+  color: hsl(224, 47%, 72%);
+  font-size: 16px;
+}
+.cur-operand{
+  color: hsl(224, 47%, 92%);
+  font-size: 24px;
+}
+.card-body.slider{
+  width: 600px;
+  padding-bottom: 28px;
+}
+.current-image{
+  width: 100%;
+}
+.arrow{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  /* color: #fff !important; */
+  background: #d6d6d6;
+  border-radius: 50%;
+  /* filter: drop-shadow(0px 0px 5px #555) */
+  top: 50%;
+  transform: translateY(-50%);
+}
+.arrow-left{
+  left: 24px;
+}
+.arrow-right{
+  right: 24px;
+}
+.circle-indicators{
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.current-indicator{
+  background-color: #505050;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: none;
+  outline-color: transparent;
+  margin: 0 0.2rem;
+  cursor: pointer;
+}
+.update-current-image{
+  display: none;
+}
+.inactive-indicator{
+  background-color: #a9a9a9;
+}
+.forms .card-right{
+  /* margin-top: 46px; */
+  margin-left: 10vw;
+}
+.data{
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #2e2e2e;
+  display: flex;
+  width: min(500px, 100%);
+  padding-bottom: 8px;
+  border-bottom: 1px solid  rgba(74, 105, 189, 0.6);
+}
+.data .data-span{
+  color: #6e6e6e;
+  width: 150px;
+}
+.card-left{
+  flex: 1;
+}
+.card-right{
+  flex: 1;
+}
+.mt-24{
+  margin-top: 24px;
+}
+.mb-24{
+  margin-bottom: 24px;
+}
+.mt-12{
+  margin-top: 12px;
+}
+.mb-12{
+  margin-bottom: 12px;
+}
+@media (width < 992px) {
+  header, main, footer{
+    padding: 40px 40px;
+  }
+}
